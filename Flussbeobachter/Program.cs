@@ -23,7 +23,7 @@
             schiff2b.SchiffEvent += schiff2b.WasserEvent;
             kwerk.KlaerwerkEvent += kwerk.WasserEvent;
             while (true) {
-                //Console.Clear();
+                Console.Clear();
                 fluss1.Fliesst();
                 schiff1a.beobachten(fluss1);
                 schiff1b.beobachten(fluss1);

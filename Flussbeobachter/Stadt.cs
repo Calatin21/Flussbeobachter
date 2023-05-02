@@ -7,7 +7,8 @@
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Stadt: {0}\tWasserschutzwände Hochgefahren.", ((Stadt)source).Name);
                     Console.ForegroundColor = ConsoleColor.Gray;
-                    this.Schutzwand = true; }
+                    this.Schutzwand = true;
+                }
             }
             if (e.Wasserstand <= 8200) {
                 if (this.Schutzwand == true) {

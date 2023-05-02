@@ -7,7 +7,8 @@
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Schiff: {1} angehalten.", e.Wasserstand, ((Schiff)source).Name);
                     Console.ForegroundColor = ConsoleColor.Gray;
-                    this.faehrt = false; }
+                    this.faehrt = false;
+                }
             }
             if (e.Wasserstand >= 250 && e.Wasserstand <= 8000) {
                 if (this.faehrt == false) {

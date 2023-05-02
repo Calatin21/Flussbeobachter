@@ -1,13 +1,13 @@
 ﻿namespace Flussbeobachter {
     internal class Program {
-                static void Main(string[] args) {
-            Fluss fluss1 = new Fluss() { Name = "Rhein"};
+        static void Main(string[] args) {
+            Fluss fluss1 = new Fluss() { Name = "Rhein" };
             Stadt stadt1a = new Stadt() { Name = "Köln" };
             Stadt stadt1b = new Stadt() { Name = "Düsseldorf" };
             Schiff schiff1a = new Schiff() { Name = "Rheingold" };
             Schiff schiff1b = new Schiff() { Name = "Lorelei" };
 
-            Fluss fluss2 = new Fluss() { Name = "Donau"};
+            Fluss fluss2 = new Fluss() { Name = "Donau" };
             Stadt stadt2a = new Stadt() { Name = "Ulm" };
             Schiff schiff2a = new Schiff() { Name = "Xaver" };
             Schiff schiff2b = new Schiff() { Name = "Unser Franz" };
@@ -26,14 +26,14 @@
             while (true) {
                 Console.Clear();
                 fluss1.Fliesst();
-                Console.WriteLine("Fluss: {1}\tWasserstand: {0}", fluss1.Wasserstand, fluss1.Name);
+                Console.WriteLine("Fluss: {1}\tWasserstand: {0}\talter Wasserstand: {2}", fluss1.Wasserstand, fluss1.Name, fluss1.AlterWasserstand);
                 schiff1a.beobachten(fluss1);
                 schiff1b.beobachten(fluss1);
                 stadt1a.beobachten(fluss1);
                 stadt1b.beobachten(fluss1);
                 Console.WriteLine("-----------------------------------------------------------------");
                 fluss2.Fliesst();
-                Console.WriteLine("Fluss: {1}\tWasserstand: {0}", fluss2.Wasserstand, fluss2.Name);
+                Console.WriteLine("Fluss: {1}\tWasserstand: {0}\talter Wasserstand: {2}", fluss2.Wasserstand, fluss2.Name, fluss2.AlterWasserstand);
                 schiff2a.beobachten(fluss2);
                 schiff2b.beobachten(fluss2);
                 stadt2a.beobachten(fluss2);

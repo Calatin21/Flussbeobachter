@@ -7,6 +7,8 @@
             Random rnd = new Random();
             this.AlterWasserstand = this.Wasserstand;
             this.Wasserstand = rnd.Next(100, 10001);
+            Console.WriteLine("Fluss: {1}\taktueller Wasserstand: {0}\talter Wasserstand: {2}", this.Wasserstand, this.Name, this.AlterWasserstand);
+
         }
     }
 }

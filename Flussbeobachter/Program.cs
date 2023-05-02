@@ -22,26 +22,22 @@
             schiff2a.SchiffEvent += schiff2a.WasserEvent;
             schiff2b.SchiffEvent += schiff2b.WasserEvent;
             kwerk.KlaerwerkEvent += kwerk.WasserEvent;
-
             while (true) {
-                Console.Clear();
+                //Console.Clear();
                 fluss1.Fliesst();
-                Console.WriteLine("Fluss: {1}\tWasserstand: {0}\talter Wasserstand: {2}", fluss1.Wasserstand, fluss1.Name, fluss1.AlterWasserstand);
                 schiff1a.beobachten(fluss1);
                 schiff1b.beobachten(fluss1);
                 stadt1a.beobachten(fluss1);
                 stadt1b.beobachten(fluss1);
                 Console.WriteLine("-----------------------------------------------------------------");
                 fluss2.Fliesst();
-                Console.WriteLine("Fluss: {1}\tWasserstand: {0}\talter Wasserstand: {2}", fluss2.Wasserstand, fluss2.Name, fluss2.AlterWasserstand);
                 schiff2a.beobachten(fluss2);
                 schiff2b.beobachten(fluss2);
                 stadt2a.beobachten(fluss2);
                 kwerk.beobachten(fluss2);
-                Console.Read();//Thread.Sleep(1000);
+                Console.ReadLine();//Thread.Sleep(1000);
+                Console.WriteLine("");
             }
-
-
         }
     }
 }
